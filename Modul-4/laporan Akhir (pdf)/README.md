@@ -36,7 +36,7 @@ Pada topologi ini terdapat beberapa segment jaringan:
 ---
 
 ## 4. Konfigurasi tiap perangkat (+ screenshot)
-4.1 Konfigurasi MikroTik ISP
+### 4.1 Konfigurasi MikroTik ISP
 
 | Interface | IP |
 |-----------|----|
@@ -48,7 +48,7 @@ Pada topologi ini terdapat beberapa segment jaringan:
 
 ---
 
-4.2 Konfigurasi FortiGate
+### 4.2 Konfigurasi FortiGate
 
 | Interface | Peran | IP |
 |-----------|-------|----|
@@ -72,7 +72,7 @@ cek PING
 
 ---
 
-4.3 Konfigurasi Cisco Router
+### 4.3 Konfigurasi Cisco Router
 
 | Interface | IP |
 |-----------|----|
@@ -83,7 +83,7 @@ cek PING
 
 ---
 
-4.4 Konfigurasi Client LAN *(Tiny Core Linux)*
+### 4.4 Konfigurasi Client LAN *(Tiny Core Linux)*
 
 | Parameter | Nilai |
 |-----------|-------|
@@ -95,7 +95,7 @@ cek PING
 
 ---
 
-4.5 Konfigurasi Client WAN *(Tiny Core Linux)*
+### 4.5 Konfigurasi Client WAN *(Tiny Core Linux)*
 
 | Parameter | Nilai |
 |-----------|-------|
@@ -107,7 +107,7 @@ cek PING
 
 ---
 
-4.6 Konfigurasi Ubuntu Server DMZ
+### 4.6 Konfigurasi Ubuntu Server DMZ
 
 | Parameter | Nilai |
 |-----------|-------|
@@ -124,49 +124,65 @@ set halaman default:
 
 ---
 
-# 4. Hasil pengujian (+ screenshot)\
+## 5. Hasil pengujian (+ screenshot)
 
-## 1. Pengujian client lan ke gateway cisco
+### 5.1 Pengujian client lan ke gateway cisco
 
 <img width="1197" height="918" alt="image" src="https://github.com/user-attachments/assets/c4b4a734-93ed-4cbb-8847-75425f4bd71f" />
 
-## 2. Pengujian client lan ke fortigate
+### 5.2 Pengujian client lan ke fortigate
 
 <img width="1187" height="911" alt="image" src="https://github.com/user-attachments/assets/73c8b4fb-a687-4dea-bb63-b960d15bcd82" />
 
-## 3. Pengujian client lan ke DMZ
+### 5.3 Pengujian client lan ke DMZ
 
 <img width="1200" height="921" alt="Screenshot 2026-06-08 023659" src="https://github.com/user-attachments/assets/e24bd2af-812f-4b21-aaeb-bccb4a045a9b" />
 
-## 4. Pengujian client  lan akses ip dmz
+### 5.4 Pengujian client  lan akses ip dmz
 
 <img width="1192" height="918" alt="Screenshot 2026-06-08 023725" src="https://github.com/user-attachments/assets/a2cf2c21-0da5-48f9-bfed-39142aabbd09" />
 
-## 5. Pengujian client wan ping ke isp mikrotik 
+### 5.5 Pengujian client wan ping ke isp mikrotik 
 
 <img width="1190" height="918" alt="image" src="https://github.com/user-attachments/assets/8b52801e-fbc3-49bb-b30d-3ab3df99db1f" />
 
-## 6. Penujian client wan ping ke fortigate
+### 5.6 Penujian client wan ping ke fortigate
 
 <img width="1187" height="907" alt="image" src="https://github.com/user-attachments/assets/50f95e83-ca6b-4a45-94d9-dd396a1a7d2f" />
 
-## 7. Pengujian client wan akses http://10.10.10.2 harus muncul halaman web server.
+### 5.7 Pengujian client wan akses http://10.10.10.2 harus muncul halaman web server.
 
 <img width="1193" height="912" alt="Screenshot 2026-06-08 024050" src="https://github.com/user-attachments/assets/b5c9f5d8-ec73-415d-bb25-48fc0ff85bf9" />
 
-## 8. Pengujian client wan ping client lan 
+### 5.8 Pengujian client wan ping client lan 
 
 <img width="1186" height="926" alt="image" src="https://github.com/user-attachments/assets/3a8da3f2-4ac4-4c20-9a28-4682f0518dfb" />
 
-## 9. Pengujian client wan ping IP asli DMZ
+### 5.9 Pengujian client wan ping IP asli DMZ
 
 <img width="1160" height="911" alt="image" src="https://github.com/user-attachments/assets/7a2e2bc4-cd8a-410a-83c5-5f81d8295b0c" />
 
-## 10. Pengujian server dmz ping lan 
+### 5.10 Pengujian server dmz ping lan 
 
 <img width="1193" height="925" alt="Screenshot 2026-06-08 024328" src="https://github.com/user-attachments/assets/5e8f2087-e5c6-4fb5-af7d-af2be8d66fca" />
 
 
 
 ---
-Analisis dan kesimpulan
+## 6. Analisis dan kesimpulan
+### 6.1 Analisis
+
+Berdasarkan hasil praktikum, konfigurasi jaringan DMZ menggunakan MikroTik, FortiGate, Cisco Router, Client LAN, Client WAN, dan Ubuntu Server berhasil berjalan sesuai dengan teori. MikroTik berfungsi sebagai router ISP yang menghubungkan jaringan luar dengan FortiGate, sedangkan FortiGate berhasil menjalankan perannya sebagai firewall utama yang memisahkan zona WAN, LAN, dan DMZ. Cisco Router juga berhasil menjadi gateway untuk jaringan LAN, sehingga Client LAN dapat berkomunikasi dengan gateway Cisco, FortiGate, dan Server DMZ.
+
+Hasil pengujian menunjukkan bahwa Client LAN dapat melakukan ping ke gateway Cisco, FortiGate, dan Server DMZ. Selain itu, Client LAN juga berhasil mengakses halaman web Nginx pada Server DMZ melalui alamat `http://192.168.20.10`. Hal ini membuktikan bahwa routing antara LAN dan DMZ sudah berjalan dengan benar serta firewall policy LAN ke DMZ telah dikonfigurasi sesuai kebutuhan.
+
+Pada sisi WAN, Client WAN berhasil melakukan ping ke MikroTik dan FortiGate. Client WAN juga berhasil mengakses web server DMZ melalui alamat VIP `http://10.10.10.2`. Hal ini membuktikan bahwa konfigurasi Virtual IP atau port forwarding pada FortiGate berhasil meneruskan akses HTTP dari sisi WAN menuju Server DMZ dengan IP asli `192.168.20.10`.
+
+Kendala yang sempat terjadi selama praktikum adalah kesalahan konfigurasi IP pada interface FortiGate, yaitu port2 sempat menggunakan network yang berbeda dengan Cisco Router. Akibatnya, Cisco tidak dapat melakukan ping ke FortiGate. Setelah IP port2 diperbaiki menjadi satu subnet dengan Cisco, koneksi berhasil berjalan. Kendala lain adalah proses instalasi Nginx yang membutuhkan koneksi internet, sehingga routing, NAT, DNS, dan policy DMZ ke WAN harus dipastikan berjalan terlebih dahulu. Setelah seluruh konfigurasi diperbaiki, Nginx berhasil dipasang dan halaman web DMZ dapat diakses dari Client LAN maupun Client WAN.
+
+### 6.2 Kesimpulan
+
+Berdasarkan praktikum yang telah dilakukan, konfigurasi DMZ Firewall berhasil diterapkan dengan baik. MikroTik berhasil berfungsi sebagai router ISP, FortiGate berhasil memisahkan dan mengatur akses antar zona, Cisco Router berhasil menjadi gateway jaringan LAN, dan Ubuntu Server berhasil menjalankan layanan web menggunakan Nginx pada zona DMZ.
+
+Hasil praktikum sesuai dengan tujuan, yaitu Client LAN dapat mengakses Server DMZ secara langsung melalui IP `192.168.20.10`, sedangkan Client WAN dapat mengakses Server DMZ melalui VIP FortiGate `10.10.10.2`. Praktikum ini menunjukkan bahwa DMZ dapat digunakan untuk menempatkan server agar dapat diakses dari jaringan luar tanpa membuka akses langsung ke jaringan LAN internal. Selain itu, praktikum ini juga memberikan pemahaman mengenai routing statis, firewall policy, NAT, VIP/port forwarding, serta pentingnya ketelitian dalam menentukan IP address dan subnet pada setiap interface jaringan.
+
