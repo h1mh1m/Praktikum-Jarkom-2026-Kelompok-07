@@ -1,5 +1,5 @@
-1. Topologi jaringan
-
+1. Topologi jaringan\
+![](gambar/CnP_07062026_204157.png)
 ---
 
 2. Tabel IP address
@@ -20,8 +20,16 @@
 
 ---
 
-Konfigurasi tiap perangkat (+ screenshot)
+3. Konfigurasi tiap perangkat (+ screenshot)
 
-Hasil pengujian (+ screenshot)
+---
 
+4. Hasil pengujian (+ screenshot)\
+![](gambar/pengujian%201.png)
+![](gambar/pengujian%202.png)
+![](gambar/pengujian%203.png)
+![](gambar/pengujian%204.png)
+![](gambar/pengujian%205.png)
+
+---
 Analisis dan kesimpulan
