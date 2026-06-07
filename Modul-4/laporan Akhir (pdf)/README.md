@@ -1,6 +1,5 @@
 # Konfigurasi DMZ Menggunakan MikroTik, FortiGate, dan Cisco di PNETLab
 ## 1. Topologi jaringan
-![](gambar/CnP_07062026_204157.png)
 <img width="912" height="837" alt="image" src="https://github.com/user-attachments/assets/89c6b9fe-5a65-444b-b212-be14b853180f" />
 
 ---
@@ -45,6 +44,8 @@ Pada topologi ini terdapat beberapa segment jaringan:
 | ke FortiGate | `10.10.10.1/30` |
 | ke Client WAN | `172.16.100.1/24` |
 
+<img width="1195" height="892" alt="Screenshot 2026-06-08 015259" src="https://github.com/user-attachments/assets/7b09e9df-d347-4830-81e7-640cf9865677" />
+
 ---
 
 4.2 Konfigurasi FortiGate
@@ -55,6 +56,15 @@ Pada topologi ini terdapat beberapa segment jaringan:
 | `port2` | INSIDE | `10.20.20.1/30` |
 | `port3` | DMZ | `192.168.20.1/24` |
 
+config system interface
+<img width="1200" height="916" alt="Screenshot 2026-06-08 015642" src="https://github.com/user-attachments/assets/9989d3fe-a8dc-43c5-ba41-bc8213585923" />
+config router static
+<img width="1192" height="916" alt="Screenshot 2026-06-08 015807" src="https://github.com/user-attachments/assets/2ac76dd3-ca6b-416c-930a-f3e9da983047" />
+config firewall policy
+<img width="1198" height="921" alt="Screenshot 2026-06-08 020018" src="https://github.com/user-attachments/assets/9e7ac648-33ea-40ac-ab87-93dd07f8ad37" />
+cek PING 
+<img width="1206" height="917" alt="Screenshot 2026-06-08 020058" src="https://github.com/user-attachments/assets/727bb858-54f1-4cda-a999-a0e44e1ae3ff" />
+
 ---
 
 4.3 Konfigurasi Cisco Router
@@ -63,6 +73,8 @@ Pada topologi ini terdapat beberapa segment jaringan:
 |-----------|----|
 | ke FortiGate | `10.20.20.2/30` |
 | ke LAN | `192.168.10.1/24` |
+
+<img width="1197" height="916" alt="Screenshot 2026-06-08 020742" src="https://github.com/user-attachments/assets/95b6ffc1-1477-4b23-97b9-fc87ad38d814" />
 
 ---
 
@@ -93,6 +105,13 @@ Pada topologi ini terdapat beberapa segment jaringan:
 | IP | `192.168.20.10/24` |
 | Gateway | `192.168.20.1` |
 | DNS | `8.8.8.8` |
+
+install nginx:
+<img width="1188" height="912" alt="Screenshot 2026-06-08 020723" src="https://github.com/user-attachments/assets/1989d3c6-5b9f-4fc9-b800-8ec604fbb87c" />
+nginx berhasil diinstal:
+<img width="1186" height="972" alt="Screenshot 2026-06-08 021330" src="https://github.com/user-attachments/assets/36dc726b-3486-4e69-a8bf-deb7de21a6ee" />
+set halaman default:
+<img width="1187" height="957" alt="Screenshot 2026-06-08 021553" src="https://github.com/user-attachments/assets/71b9b450-ea84-4293-81b0-3efd3e3ac597" />
 
 ---
 
