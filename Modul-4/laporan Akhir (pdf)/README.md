@@ -1,6 +1,8 @@
 # Konfigurasi DMZ Menggunakan MikroTik, FortiGate, dan Cisco di PNETLab
-## 1. Topologi jaringan\
+## 1. Topologi jaringan
 ![](gambar/CnP_07062026_204157.png)
+<img width="912" height="837" alt="image" src="https://github.com/user-attachments/assets/89c6b9fe-5a65-444b-b212-be14b853180f" />
+
 ---
 
 ## 2. Segmentasi Jaringan
