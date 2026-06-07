@@ -91,7 +91,7 @@ cek PING
 | Gateway | `192.168.10.1` |
 | DNS | `8.8.8.8` |
 
-<img width="1196" height="578" alt="Screenshot 2026-06-08 022930" src="https://github.com/user-attachments/assets/af778f5e-94ac-4165-baf1-d468aa930967" />
+<img width="1157" height="590" alt="image" src="https://github.com/user-attachments/assets/683a63f3-c142-4857-b4e9-eccd99145777" />
 
 ---
 
