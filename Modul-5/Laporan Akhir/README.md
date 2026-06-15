@@ -80,9 +80,10 @@
 5. Screenshot `/ip address print`.
    <img width="1101" height="272" alt="Screenshot 2026-06-13 080347" src="https://github.com/user-attachments/assets/801fa5b6-ed22-45d2-86ed-02fa3594ecd2" />
 7. Screenshot `/ip dhcp-server print`.
-   
+   <img width="1152" height="97" alt="Screenshot 2026-06-13 081522" src="https://github.com/user-attachments/assets/c2675584-de66-43b9-b087-85d4eef6ba02" />
 9. Screenshot `/ip pool print`.
-10. Screenshot `/ip route print`.
+    <img width="1201" height="82" alt="Screenshot 2026-06-13 081447" src="https://github.com/user-attachments/assets/a801c069-f1f0-4afe-afcf-c8e6dff46c57" />
+11. Screenshot `/ip route print`.
     <img width="1176" height="396" alt="Screenshot 2026-06-13 080407" src="https://github.com/user-attachments/assets/53a005b8-db91-4503-abbc-ec945cf1a10b" />
 12. Screenshot client VLAN 30 mendapat IP DHCP.
     <img width="1205" height="705" alt="image" src="https://github.com/user-attachments/assets/ddb7be9e-a036-45a2-9cd7-04fcb884b0d8" />
@@ -91,20 +92,30 @@
 
 ## Tugas Modul 8 — Konfigurasi FortiGate Surabaya
 1. Screenshot `get system interface physical`.
-2. Screenshot `get router info routing-table all`.
-3. Screenshot firewall policy.
-4. Screenshot ping ke 8.8.8.8.
-5. Screenshot ping ke IP tunnel Jakarta.
-6. Screenshot `get router info ospf neighbor`.
-7. Screenshot `get router info routing-table ospf`.
+   <img width="1206" height="941" alt="Screenshot 2026-06-13 082147" src="https://github.com/user-attachments/assets/b091a179-d992-4203-aa39-421cce9beeca" />
+3. Screenshot `get router info routing-table all`.
+   <img width="1182" height="606" alt="Screenshot 2026-06-13 082201" src="https://github.com/user-attachments/assets/9c95b4ba-dee4-41e9-a2b7-799410f15a31" />
+5. Screenshot firewall policy.
+   <img width="1160" height="942" alt="Screenshot 2026-06-13 082221" src="https://github.com/user-attachments/assets/8f916bfa-3408-42ad-98b5-322c3cabecfd" />
+7. Screenshot ping ke 8.8.8.8.
+   <img width="1083" height="416" alt="Screenshot 2026-06-13 082232" src="https://github.com/user-attachments/assets/238a89da-d354-4735-b850-f405226e9f2f" />
+9. Screenshot ping ke IP tunnel Jakarta.
+    <img width="1098" height="403" alt="Screenshot 2026-06-13 082245" src="https://github.com/user-attachments/assets/b1b798ea-3188-4ad0-b74c-2266c1ab0f8d" />
+11. Screenshot `get router info ospf neighbor`.
+    <img width="1110" height="248" alt="Screenshot 2026-06-13 082253" src="https://github.com/user-attachments/assets/6c5d1233-bf3f-4bcd-aa58-02245d609c47" />
+13. Screenshot `get router info routing-table ospf`.
+    <img width="1082" height="312" alt="Screenshot 2026-06-13 082301" src="https://github.com/user-attachments/assets/b0712ad5-6563-44b8-93b4-daa847e256dd" />
 
 ## Tugas Modul 9 — Konfigurasi GRE Tunnel dan OSPF over GRE
 1. Screenshot ping WAN antar-FortiGate.
-2. Screenshot ping tunnel antar-FortiGate.
-3. Screenshot `get router info ospf neighbor`.
-4. Screenshot `get router info routing-table ospf`.
-5. Screenshot ping client Jakarta ke client Surabaya.
-6. Screenshot ping client Surabaya ke client Jakarta.
+   <img width="1112" height="396" alt="Screenshot 2026-06-13 082455" src="https://github.com/user-attachments/assets/bd9efc2d-21a4-482c-8c86-25e205fcb3d6" />
+3. Screenshot ping tunnel antar-FortiGate.
+   <img width="1147" height="396" alt="Screenshot 2026-06-13 082502" src="https://github.com/user-attachments/assets/c634260c-f7b0-4751-af82-6794e605a440" />
+5. Screenshot `get router info ospf neighbor`.
+   
+7. Screenshot `get router info routing-table ospf`.
+8. Screenshot ping client Jakarta ke client Surabaya.
+9. Screenshot ping client Surabaya ke client Jakarta.
 
 ## Tugas Modul 10 — Pengujian Akhir
 1. Screenshot IP DHCP client Jakarta (Vlan 10).
