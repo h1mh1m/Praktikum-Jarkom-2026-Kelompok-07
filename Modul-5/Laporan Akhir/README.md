@@ -4,7 +4,6 @@
 
 ## Tugas Modul 1 — Konfigurasi Cisco Switch Jakarta
 1. Screenshot topologi Jakarta.
-   <img width="698" height="842" alt="image" src="https://github.com/user-attachments/assets/7d8a6714-aa0c-43aa-b187-cb6f90eadc0d" />
 2. Screenshot `show vlan brief`.
    <img width="951" height="652" alt="Screenshot 2026-06-13 073651" src="https://github.com/user-attachments/assets/4baaf72b-d29e-4cbb-b485-78b15e9e1d0b" />
 3. Screenshot `show interfaces trunk`.
