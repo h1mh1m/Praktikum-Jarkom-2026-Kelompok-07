@@ -45,13 +45,15 @@
    <img width="1202" height="321" alt="image" src="https://github.com/user-attachments/assets/5c0563c3-d9cd-499a-b1c2-d1a1d527b04c" />
 
 ## Tugas Modul 5 — Konfigurasi FortiGate Jakarta
-1. Screenshot `get system interface physical`.
-2. Screenshot `get router info routing-table all`.
-3. Screenshot firewall policy.
-4. Screenshot ping ke 8.8.8.8.
-5. Screenshot ping ke IP tunnel Surabaya.
-6. Screenshot `get router info ospf neighbor`.
-7. Screenshot `get router info routing-table ospf`.
+1. Screenshot `get system interface physical`
+   <img width="1168" height="935" alt="Screenshot 2026-06-13 075245" src="https://github.com/user-attachments/assets/2f2bb1e4-d1d0-47e6-bf28-fd7db5d88978" />
+3. Screenshot `get router info routing-table all`
+   
+5. Screenshot firewall policy.
+6. Screenshot ping ke 8.8.8.8.
+7. Screenshot ping ke IP tunnel Surabaya.
+8. Screenshot `get router info ospf neighbor`
+9. Screenshot `get router info routing-table ospf`
 
 ## Tugas Modul 6 — Konfigurasi MikroTik ISP
 1. Screenshot `/ip address print` **hasil di ether 1 bisa saja berbeda karena emang dinamic**.
